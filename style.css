@@ -15,7 +15,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header header";
+    "header header header"
+    "nav nav nav";
 }
 
 /*Header*/
@@ -33,7 +34,7 @@ body {
 }
 
 h1 {
-    color: rgba(167, 60, 255, 0.945);
+    color: rgba(150, 47, 235, 0.945);
     text-shadow: rgba(84, 23, 134, 0.945) 1px 1px;
     letter-spacing: 0.05em;
 }
@@ -68,4 +69,22 @@ header{
     flex-direction: column;
 }
 
-/*first section*/
+/*nav*/
+
+nav{
+    grid-area: nav;
+    padding: 8px;
+    background-color: rgb(160, 124, 201);
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+nav .navbar{
+    padding: 0 20px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #eee
+}
