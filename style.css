@@ -4,6 +4,26 @@ body {
     height: 100vh;
 }
 
-.wrapper{
-    
+.grid-container{
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header";
+}
+
+.top{
+    background-image: url(https://images.unsplash.com/photo-1612431318619-9abdb218253b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background: center center / no-repeat;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
