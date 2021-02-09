@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/*header font*/
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 
 body {
     margin: 0;
     height: 100vh;
+    font-family: sans-serif;
 }
 
-.grid-container{
+/* .grid-container{
     margin: 0 auto;
     font-family: sans-serif;
     display: grid;
@@ -16,32 +20,40 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
-    "nav nav nav";
-}
+    "nav nav nav"
+    "main main main";
+} */
 
 /*Header*/
+
+header{
+    height: 100vh;
+    display: flex;
+    font-size: 2.4rem;
+    flex-direction: column;
+    justify-content:center;
+    padding: 2rem 4rem 0 18rem;
+}
 
 .top{
     background: url(https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1866&q=80) 
     center center / cover no-repeat;
-    font-family: 'Monoton', cursive;
-    color: #eee;
-    text-transform: uppercase;
+    font-family: 'Yusei Magic', sans-serif;
+    color: #222;
+    text-shadow: rgba(0, 161, 113, 0.747) 1.5px 1.5px;
+    line-height: 3.8rem;
 }
 
-.top h1, .ffd{
-    margin: 0;
+.top h3, h1, .ffd{
+    margin:0;
 }
 
 h1 {
-    color: rgba(150, 47, 235, 0.945);
-    text-shadow: rgba(84, 23, 134, 0.945) 1px 1px;
     letter-spacing: 0.05em;
 }
 
 .ffd{
-    color: rgba(0, 255, 179, 0.719);
-    text-shadow: rgba(0, 78, 55, 0.719) 1px 1px;
+    text-shadow: rgba(0, 161, 113, 0.747) 1.5px 1.5px;
     letter-spacing: 0.2em;
     font-size: 1.4rem;
     font-weight: bolder;
@@ -50,41 +62,60 @@ h1 {
 .top a{
     font-family: 'Amatic SC', cursive;
     text-decoration: none;
-    color: #eee;
+    color: #222;
     text-transform: uppercase;
     font-weight: bolder;
-    text-shadow: rgb(53, 61, 70) 1px 1px;
-
     font-size: 1.6rem;
-
 }
 
-header{
-    grid-area: header;
-    height: 100vh;
-    display: flex;
-    font-size: 2.4rem;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
+button{
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgba(0, 161, 113, 0.747);
 }
 
 /*nav*/
 
 nav{
     grid-area: nav;
-    padding: 8px;
-    background-color: rgb(160, 124, 201);
+    background-color: rgb(192, 192, 192);
+    overflow: hidden;
     display: flex;
     justify-content: row;
     align-items: center;
-    flex-direction: row-reverse;
+    justify-content:space-around;
 }
 
 nav .navbar{
-    padding: 0 20px;
+    padding: 8px;
     text-decoration:none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #eee
+    color: #222;
+    letter-spacing: 0.2rem;
+}
+
+nav .navbar:hover{
+    color: rgb(55, 103, 192);
+}
+
+/*main*/
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jag{
+    border-radius: 90%;
 }
