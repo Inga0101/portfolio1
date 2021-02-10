@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-/*header font*/
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 
 body {
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     background-color: rgb(117, 129, 163);
 }
@@ -20,12 +19,12 @@ body {
 /*Header*/
 
 header{
-    height: 95vh;
+    height: 75vh;
     display: flex;
     font-size: 2.4rem;
     flex-direction: column;
     justify-content:center;
-    padding: 0rem 4rem 0 18rem;
+    padding: 4rem 4rem 0 18rem;
 }
 
 .top{
@@ -65,17 +64,18 @@ button{
 
 button:hover{
     background-color: rgba(33, 102, 192, 0.87);
-    transition-delay: 0.2ms;
+    transition-delay: 0.1ms;
 }
 
 button a:hover{
     color: #eee;
-    transition-delay: 0.2ms;
+    transition-delay: 0.1ms;
 }
 
 /*nav*/
 
 nav{
+    font-family: 'Yusei Magic', sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: row;
@@ -83,13 +83,7 @@ nav{
     justify-content:space-between;
     width: 100%;
     position: relative;
-    top: 0;
 }
-
-/* .sticky{
-    position: fixed !important;
-    top: 0!important;
-} */
 
 nav .navbar{
     margin: 1rem;
@@ -120,28 +114,35 @@ main{
 
 main section{
     margin: 15px 15px;
-    padding: 10px 10px;
+    padding: 20px 20px;
 }
 
 main .about-me{
+    margin: 3rem;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 .about-me p{
     font-size: 1.5rem;
+    padding: 0 4rem;
 }
 
 .jag{
     border-radius: 50%;
-    padding: 10px 10px;
+    padding: 0 3.5rem 0 0;
 }
 
 /*cards*/
 
 #projects{
+    margin: 5rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -190,6 +191,38 @@ section .card3{
 
 /*school*/
 
+#school{
+    margin: 5rem;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(auto, 15vh);
+    gap: 1rem;
+}
+
+#school a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#school article.school{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+#school article.programming-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /*footer*/
 
 footer{
@@ -200,7 +233,7 @@ footer{
 }
 
 footer p, a {
-    padding: 0.2rem;
+    padding: 0.7rem;
 }
 
 footer .copyright{
@@ -218,4 +251,5 @@ footer .logos{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    filter: invert(75%);
 }
