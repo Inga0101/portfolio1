@@ -194,11 +194,11 @@ main .about-me{
     align-items: center;
 }
 
-.abt-title{
+h2{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    background-color: rgba(70, 118, 180, 0.751);
+    text-decoration: underline;
 }
 
 .about-me p{
