@@ -11,6 +11,12 @@ body {
     background-color: rgb(117, 129, 163);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 /*bg circle animation*/
 
 .circle{
@@ -75,12 +81,6 @@ body {
   .shade5{
     opacity: 0.9;
   }
-
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
 
 /*Header*/
 
@@ -194,11 +194,11 @@ main .about-me{
     align-items: center;
 }
 
-.abt-title{
+h2{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    background-color: rgba(70, 118, 180, 0.751);
+    text-decoration: underline;
 }
 
 .about-me p{
@@ -329,6 +329,10 @@ footer .logos{
     filter: invert(75%);
 }
 
+footer .logos a img{
+    height: 40px;
+}
+
 /*background animation*/
 @keyframes ripple{
     0%{
@@ -350,6 +354,53 @@ footer .logos{
 }
 
 /*responsive*/
-@media screen and (max-width: 640px){
+@media screen and (max-width: 800px){
+   #navigation{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+   }
+   header{
+       padding: 2rem;
+       font-size: 1rem;
+   }
+   main .about-me{
+        display: flex;
+        flex-direction: column;
+   }
+   main .about-me p{
+       font-size: 1rem;
+   }
+   h2{
+       font-size: 0.7rem;
+   }
+   #projects{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(auto, 75px);
+    gap: 0.3rem;
+   }
+   #projects article{
+       width: 75px;
+       height: 120px;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+   }
+   #school img.programming-logos{
+       height: 40px;
+   }
+   #school article.school{
+       line-height: 0.8rem;
+       font-size: 0.5rem;
+   }
+}
 
+@media screen and (max-width: 400px){
+    footer .logos a img{
+        height: 30px;
+    }
+    footer .copyright{
+        font-size: 0.55rem;
+    }
 }
