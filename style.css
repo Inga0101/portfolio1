@@ -61,15 +61,15 @@ body {
     opacity: 0.2;
   }
   .shade2{
-    opacity: 0.5;
+    opacity: 0.4;
   }
   
   .shade3{
-    opacity: 0.6;
+    opacity: 0.5;
   }
   
   .shade4{
-    opacity: 0.7;
+    opacity: 0.6;
   }
   
   .shade5{
@@ -162,7 +162,7 @@ nav .navbar{
 }
 
 nav .navbar:hover{
-    color: rgb(0, 110, 77);
+    color: rgba(42, 119, 138, 0.925);
 }
 
 /*main*/
@@ -184,6 +184,9 @@ main section{
 }
 
 main .about-me{
+    background-color: rgba(70, 118, 180, 0.751);
+    padding: 1rem;
+    border-radius: 1rem;
     margin: 3rem;
     display:flex;
     flex-direction: row;
@@ -191,10 +194,11 @@ main .about-me{
     align-items: center;
 }
 
-h2{
+.abt-title{
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
+    background-color: rgba(70, 118, 180, 0.751);
 }
 
 .about-me p{
